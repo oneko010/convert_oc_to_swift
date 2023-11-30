@@ -17,3 +17,12 @@ setTimeout(function() {
 		}, 500)
 	}
 }, 5000)
+
+// content.js
+
+// 接收来自后台脚本的消息
+chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
+  console.log("Received message from background:", message);
+  // 在这里执行你想要的操作
+});
+

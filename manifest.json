@@ -13,7 +13,7 @@
 		}
 	],
 
-	"permissions": ["contextMenus"],
+	"permissions": ["contextMenus", "tabs"],
 	"background": {
 		"service_worker": "script/background.js"
 	}
