@@ -11,5 +11,10 @@
 			"js": ["script/test.js"],
 			"matches": ["https://chat.openai.com/*"]
 		}
-	]
+	],
+
+	"permissions": ["contextMenus"],
+	"background": {
+		"service_worker": "script/background.js"
+	}
 }

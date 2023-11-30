@@ -1,7 +1,5 @@
 chrome.contextMenus.create({
-	title: "doConvert",
-	contexts: ["doConvert"],
-	onclick: function() {
-		alert('click');
-	}
+	title: "转换剪贴板的OC代码",
+	contexts: ["all"],
+	id: "doConvert"
 })
