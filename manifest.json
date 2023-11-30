@@ -13,7 +13,7 @@
 		}
 	],
 
-	"permissions": ["contextMenus", "tabs"],
+	"permissions": ["contextMenus", "tabs", "clipboardRead", "activeTab"],
 	"background": {
 		"service_worker": "script/background.js"
 	}
