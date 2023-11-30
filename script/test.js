@@ -23,11 +23,12 @@ function doConvert(code) {
 chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
   console.log("Received message from background:", message);
   
-  
+
   navigator.clipboard.readText()
     .then(text => {
       console.log('剪贴板内容：', text);
       // 在这里可以处理读取到的文本内容
+      doConvert(text + ' 转换成swift')
     })
     .catch(err => {
       console.error('无法读取剪贴板内容：', err);
