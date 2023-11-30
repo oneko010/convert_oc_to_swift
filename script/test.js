@@ -28,7 +28,7 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
     .then(text => {
       console.log('剪贴板内容：', text);
       // 在这里可以处理读取到的文本内容
-      doConvert(text + ' 转换成swift')
+      doConvert(text + ' 全部转换成swift代码')
     })
     .catch(err => {
       console.error('无法读取剪贴板内容：', err);
