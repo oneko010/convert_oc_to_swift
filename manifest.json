@@ -1,0 +1,15 @@
+{
+	"name": "convert to swift plug",
+	"version": "0.0.1",
+	"manifest_version": 3,
+	"description": "convert objective-c to swift",
+
+	"default_locale": "zh_CN",
+
+	"content_scripts": [
+		{
+			"js": ["script/test.js"],
+			"matches": ["https://chat.openai.com/*"]
+		}
+	]
+}
